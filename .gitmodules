@@ -1,0 +1,6 @@
+[submodule "external/tensorflow"]
+	path = external/tensorflow
+	url = https://github.com/tensorflow/tensorflow.git
+[submodule "external/models"]
+	path = external/models
+	url = https://github.com/tensorflow/models.git
