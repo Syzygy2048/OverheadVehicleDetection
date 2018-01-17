@@ -107,3 +107,6 @@ ENV/
 #project specific
 external/
 data/mnist/
+
+log/
+checkpoints/
