@@ -84,7 +84,7 @@ with tf.Session() as sess:
         #print("train step %d" % (i))
         batch = mnist.train.next_batch(50)
         if (i % 100 == 0):
-            train_accuracy =  accuracy.eval(feed_dict={input: batch[0], groundTruth: batch[1], keep_prob: 1.0})
+            train_accuracy = accuracy.eval(feed_dict={input: batch[0], groundTruth: batch[1], keep_prob: 1.0})
             print('step %d, training accuracy %g' % (i, train_accuracy))
         train_step.run(feed_dict={input: batch[0], groundTruth: batch[1], keep_prob: 1.0})
     print('test accuracy %g' % accuracy.eval(feed_dict={input: mnist.test.images, groundTruth: mnist.test.labels, keep_prob: 1.0}))
