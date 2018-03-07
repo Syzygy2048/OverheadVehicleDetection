@@ -103,10 +103,13 @@ ENV/
 
 #pycharm
 .idea/
+externalVenv
 
 #project specific
 external/
 data/mnist/
 
+data/
 log/
 checkpoints/
+
